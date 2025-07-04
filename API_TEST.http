@@ -1,0 +1,19 @@
+@local=http://localhost:8080
+
+###
+POST {{local}}/users
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john.doe@example.com"
+}
+
+###
+GET {{local}}/users
+
+###
+GET {{local}}/users/1
+
+###
+DELETE {{local}}/users/1
